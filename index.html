@@ -200,8 +200,15 @@
                       <textarea id="message" name="massage" placeholder="Type your text here.." style="display:none;"></textarea>
                   </div>
                 <div class="col-75" style="margin-left: 14.5%;">
-                   <button type="submit"  class="submit" value="send">send</button>
+                   <!-- <button type="submit"  class="submit" value="send" onclick="add()">send</button> -->
                    <!-- <button type="reset"  class="submit" value="reset">reset</button> -->
+                   <input type="submit" class="submit" value="send" onClick="add()">
+                   <script>
+                    function add(){
+                     let emoji = " " + String.fromCodePoint(128120);
+                     document.getElementById("body").value += emoji;
+                    }
+                   </script>
                 </div>
            </form>
     </div>
