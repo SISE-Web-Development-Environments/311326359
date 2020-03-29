@@ -93,6 +93,7 @@
     <iframe width="700" height="394" src="https://www.youtube.com/embed/JkafqBj6dsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 <section id="like" class="section">
+    <!-- <iframe src="http://www.facebook.com/plugins/like.php?href=https://sise-web-development-environments.github.io/311326359/&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80&amp" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe> -->
     <div class="title" style="font-size: 45px;"><b>give me a like</b></div>
     <br>
     <br>
@@ -100,8 +101,7 @@
          data-href="https://www.facebook.com/pg/YarinHayun/about/?ref=page_internal" data-width="750" data-layout="standard" data-action="like" data-size="large" data-share="true">
     </div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v6.0"></script>
-    <!-- <iframe src="http://www.facebook.com/plugins/like.php?href=https://sise-web-development-environments.github.io/311326359/&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80&amp" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"; data share=true></iframe>
- -->
+   
 </section>
 <section id="qrcoder" class="section">
     <div class="title" style="font-size: 45px;"><b>scan my code</b></div>
@@ -197,11 +197,17 @@
                        <input type="email" id="E-mail" name="E-mail" placeholder="E-mail">
                    </div>
                   <div class="col-75">
-                      <textarea id="message" name="massage" placeholder="Type your text here.." ></textarea>
+                      <textarea id="message" name="massage" placeholder="Type your text here.." style="display:none;"></textarea>
                   </div>
                 <div class="col-75" style="margin-left: 14.5%;">
                    <button type="submit"  class="submit" value="send">send</button>
-                  
+                   <script>
+                    function add(){
+                     let emoji = " " + String.fromCodePoint(128120);
+                     document.getElementById("body").value += emoji;
+                    }
+                   </script>
+                   <!-- <button type="reset"  class="submit" value="reset">reset</button> -->
                 </div>
            </form>
     </div>
