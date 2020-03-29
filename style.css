@@ -86,21 +86,8 @@ input[type=text]:focus{
     border-color:  rgba(236, 200, 200, 1);
     box-shadow: 0 0 10px rgba(236, 200, 200, 1) ;
 }
-
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-select{
-    width: 20.5%;
-    padding: 12px;
-    border-radius: 10px;
-    resize: vertical;
-    margin-left: 38%;
-    border: 3px solid gray;
-}
-button{
-border:1px solid rgba(99, 97, 97, 1);
+input[type=submit]{
+    border:1px solid rgba(99, 97, 97, 1);
 cursor:pointer;
 background-color:rgba(236, 209, 200, 1);
 color:#636161;
@@ -125,6 +112,19 @@ font:normal normal normal 25px/1.4em mixtape-aaa-400,sans-serif;
 font-family:Berlin Sans FB;
 border-radius: 6px;
 }
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+select{
+    width: 20.5%;
+    padding: 12px;
+    border-radius: 10px;
+    resize: vertical;
+    margin-left: 38%;
+    border: 3px solid gray;
+}
+
 .col-75 {
     float: left;
     width: 75%;
