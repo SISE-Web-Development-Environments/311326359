@@ -87,16 +87,16 @@ input[type=text]:focus{
     box-shadow: 0 0 10px rgba(236, 200, 200, 1) ;
 }
 input[type=submit]{
-    border:1px solid rgba(99, 97, 97, 1);
+border:1px solid rgba(99, 97, 97, 1);
 cursor:pointer;
-background-color:rgba(236, 209, 200, 1);
+background-color:#ffe4e1;
 color:#636161;
 font:normal normal normal 25px/1.4em mixtape-aaa-400,sans-serif;
 font-family:Berlin SaWns FB;
 border-radius: 6px;
 position:relative;
 }
-button:hover{
+input[type=submit]:hover{
     background-color:rgb(199, 194, 194);
 }
 .submit {
